@@ -60,7 +60,7 @@ resource "azurerm_subnet" "rancher-quickstart-internal" {
 
 # Azure network interface for quickstart resources
 resource "azurerm_network_interface" "rancher-server-interface" {
-  name                = "nic-rancher-win"
+  name                = "nic-rancher-win-int"
   location            = azurerm_resource_group.rancher-quickstart.location
   resource_group_name = azurerm_resource_group.rancher-quickstart.name
 
