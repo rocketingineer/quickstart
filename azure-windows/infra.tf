@@ -244,7 +244,7 @@ resource "azurerm_linux_virtual_machine" "quickstart-node" {
     inline = [
       "echo 'Waiting for cloud-init to complete...'",
       "cloud-init status --wait > /dev/null",
-      "echo 'Completed cloud-init!'",
+      "echo 'Completed cloud-init - Standby while rancher deploys!'",
     ]
 
     connection {
